@@ -1,1 +1,9 @@
-# Nautical-Quest-A-Boat-Game-using-Computer-Graphics
+# Boat Game
+
+**Created by:**
+
+Saowmi Mehjabin
+
+Sharon Rose Sarker
+
+Kohinoor Sultana Elora
