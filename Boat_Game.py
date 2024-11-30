@@ -2,6 +2,8 @@ from OpenGL.GL import *
 from OpenGL.GLUT import *
 from OpenGL.GLU import *
 import numpy as np
+import math
+import random
 
 class BoatGame:
     def __init__(self):
@@ -14,7 +16,7 @@ class BoatGame:
         self.score1 = 0
         self.score2 = 0
 
-#saowmi
+
     def move_boat1(self,dx):
         new_x = self.boat1_x + dx
         self.boat1_x = max(20, min(480, new_x))
@@ -148,7 +150,7 @@ class BoatGame:
         glColor3f(1.0, 1.0, 1.0)
         self.MidPointAlgo(x + 85, y + 20, x + 93, y + 35)
         self.MidPointAlgo(x + 100, y + 20, x + 93, y + 35)
-#elora
+
     def draw_points(self,x, y, size):
         points = np.array([[x, y]], dtype=np.float32)
         glEnableClientState(GL_VERTEX_ARRAY)
@@ -235,7 +237,7 @@ class BoatGame:
         glPopMatrix()
 
 
-# sharon
+
     def draw_bullets(self):
         for bullet in self.bullets1:
             self.draw_bullet(bullet[0], bullet[1])
